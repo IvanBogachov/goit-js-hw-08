@@ -6,7 +6,7 @@
   "homepage": "https://ivanbogachov.github.io/goit-js-hw-08/",
   "scripts": {
     "start": "node index.js",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
+    "build": "node index.js --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
