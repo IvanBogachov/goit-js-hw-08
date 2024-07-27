@@ -93,15 +93,17 @@ const onImageCardClick = event => {
     const imageCard = event.target.closest(`.gallery-image`);
 
     const imageData = imageCard.dataset.source;
+    console.log(imageData);
     
     const imageInfo = images.find((image) => image.original === imageData);
+    // console.log(imageInfo);
 
     const modalOpen = basicLightbox.create(
       `
     	<img src="${imageInfo.original}" width="1112" height="640">
     `
     );
-    
+
     modalOpen.show();
 }
     
